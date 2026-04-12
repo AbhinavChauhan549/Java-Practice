@@ -325,8 +325,229 @@ public class Patterns {
      * 
      */
 
-    for (int i = 0; i < n; i++) {
+    // for (int i = 0; i < n; i++) {
+    // for (char ch = 'A'; ch <= 'A' + i; ch++) {
+    // System.out.print(ch + " ");
+    // }
+    // System.out.println();
+    // }
 
+    // Pattern 15 =>
+    /*
+     * 
+     * A B C D E
+     * A B C D
+     * A B C
+     * A B
+     * A
+     * 
+     */
+
+    // for (int i = 0; i < n; i++) {
+    // for (char ch = 'A'; ch < 'A' + n - i; ch++) {
+    // System.out.print(ch + " ");
+    // }
+    // System.out.println();
+    // }
+
+    // Pattern 16 =>
+    /*
+     * 
+     * A
+     * B B
+     * C C C
+     * D D D D
+     * E E E E E
+     * 
+     */
+
+    // for (int i = 0; i < n; i++) {
+    // char ch = (char) ('A' + i);
+    // for (int j = 0; j <= i; j++) {
+
+    // System.out.print(ch + " ");
+    // }
+    // System.out.println();
+    // }
+
+    // Pattern 17 =>
+    /*
+     * 
+     * A
+     * A B A
+     * A B C B A
+     * A B C D C B A
+     * 
+     */
+
+    // for (int i = 0; i < n; i++) {
+    // // for printing the white spaces
+    // for (int j = 0; j < n - i - 1; j++) {
+    // System.out.print(" ");
+    // }
+
+    // // for printing left side alphabets
+    // for (char ch = 'A'; ch <= 'A' + i; ch++) {
+    // System.out.print(ch + " ");
+    // }
+
+    // // for printing the right side alphabets
+    // char ch = (char) ('A' + i - 1);
+    // for (int j = 0; j < i; j++) {
+    // System.out.print(ch + " ");
+    // ch--;
+    // }
+    // System.out.println();
+    // }
+
+    // Pattern 18 =>
+    /*
+     * 
+     * E
+     * D E
+     * C D E
+     * B C D E
+     * A B C D E
+     * 
+     */
+
+    // for (int i = 0; i < n; i++) {
+    // char ch = (char) ('A' + n - i - 1);
+    // for (int j = 0; j <= i; j++) {
+
+    // System.out.print(ch + " ");
+    // ch++;
+    // }
+    // System.out.println();
+    // }
+
+    // Pattern 19 =>
+    /*
+     * 
+     * * * * * * * *
+     * * * * * *
+     * * * *
+     * *
+     * *
+     * * * *
+     * * * * * *
+     * * * * * * * *
+     * 
+     */
+
+    // for (int i = 0; i < n; i++) {
+    // for (int j = 0; j < n - i; j++) {
+    // System.out.print("* ");
+    // }
+    // for (int j = 0; j < 2 * (i); j++) {
+    // System.out.print(" ");
+    // }
+    // for (int j = 0; j < n - i; j++) {
+    // System.out.print("* ");
+    // }
+    // System.out.println();
+    // }
+    // for (int i = 0; i < n; i++) {
+    // for (int j = 0; j <= i; j++) {
+    // System.out.print("* ");
+    // }
+    // for (int j = 0; j < 2 * (n - i - 1); j++) {
+    // System.out.print(" ");
+    // }
+    // for (int j = 0; j <= i; j++) {
+    // System.out.print("* ");
+    // }
+    // System.out.println();
+    // }
+
+    // Pattern 20 =>
+
+    /*
+     * *
+     * * * *
+     * * * * * *
+     * * * * * * * *
+     * * * * * *
+     * * * *
+     * *
+     */
+
+    // butterfly pattern
+
+    // for (int i = 0; i < n; i++) {
+    // for (int j = 0; j <= i; j++) {
+    // System.out.print("* ");
+    // }
+    // for (int j = 0; j < 2 * (n - i - 1); j++) {
+    // System.out.print(" ");
+    // }
+    // for (int j = 0; j <= i; j++) {
+    // System.out.print("* ");
+    // }
+    // System.out.println();
+    // }
+    // for (int i = 0; i < n - 1; i++) {
+    // for (int j = 0; j < n - i - 1; j++) {
+    // System.out.print("* ");
+    // }
+    // for (int j = 0; j < 2 * (i + 1); j++) {
+    // System.out.print(" ");
+    // }
+    // for (int j = 0; j < n - i - 1; j++) {
+    // System.out.print("* ");
+    // }
+    // System.out.println();
+    // }
+
+    // Pattern 21 :
+    /*
+     * 
+     * Square Pattern
+     * 
+     * * * *
+     * *
+     * *
+     * * * *
+     * 
+     */
+
+    // for (int i = 0; i < n; i++) {
+    // for (int j = 0; j < n; j++) {
+    // if (i == 0 || i == n - 1 || j == 0 || j == n - 1) {
+    // System.out.print("* ");
+    // } else {
+    // System.out.print(" ");
+    // }
+    // }
+    // System.out.println();
+    // }
+
+    // Pattern 22 =>
+    /*
+     * 
+     * 4 4 4 4 4 4 4
+     * 4 3 3 3 3 3 4
+     * 4 3 2 2 2 3 4
+     * 4 3 2 1 2 3 4
+     * 4 3 2 2 2 3 4
+     * 4 3 3 3 3 3 4
+     * 4 4 4 4 4 4 4
+     * 
+     */
+
+    for (int i = 0; i < (2 * n) - 1; i++) {
+      for (int j = 0; j < (2 * n) - 1; j++) {
+
+        int top = i;
+        int left = j;
+        int right = (2 * n - 1) - 1 - j;
+        int bottom = (2 * n - 1) - 1 - i;
+
+        int min = Math.min(Math.min(top, bottom), Math.min(left, right));
+
+        System.out.print((n - min) + " ");
+      }
+      System.out.println();
     }
 
   }
